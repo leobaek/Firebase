@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "179795098264",
+    "project_id": "leo104-firebase",
+    "storage_bucket": "leo104-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179795098264:android:d7f84598da86f7938e6eed",
+        "android_client_info": {
+          "package_name": "com.leo104.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179795098264-naqf58jt8dvvr9dhqo570eh6kk60h9mf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1Inz9Deehh4zdps3M0fAwoCOsc-CLHhA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179795098264-naqf58jt8dvvr9dhqo570eh6kk60h9mf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
