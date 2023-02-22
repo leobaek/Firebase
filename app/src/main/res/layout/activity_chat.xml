@@ -34,10 +34,25 @@
                 android:layout_height="wrap_content"
                 android:text="send" />
 
-            <EditText
-                android:id="@+id/chat_edit"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/chat_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10" />
+
+                <ImageButton
+                    android:id="@+id/imgAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/baseline_add_24" />
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>

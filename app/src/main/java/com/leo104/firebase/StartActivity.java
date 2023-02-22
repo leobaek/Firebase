@@ -2,6 +2,7 @@ package com.leo104.firebase;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -23,9 +25,12 @@ public class StartActivity extends AppCompatActivity {
     private Button user_next;
     private ListView chat_list;
 
+    private TextView userPrimary;
+
     private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
     private DatabaseReference databaseReference = firebaseDatabase.getReference();
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +39,11 @@ public class StartActivity extends AppCompatActivity {
         user_edit = (EditText) findViewById(R.id.user_edit);
         user_next = (Button) findViewById(R.id.user_next);
         chat_list = (ListView) findViewById(R.id.chat_list);
+        userPrimary = findViewById(R.id.userPrimary);
+
+        String UserPrimary = getIntent().getStringExtra("primaryKey");
+
+        userPrimary.setText(UserPrimary+"님 환영합니다.");
 
         user_next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,6 +53,7 @@ public class StartActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(StartActivity.this, ChatActivity.class);
                 intent.putExtra("chatName", user_chat.getText().toString());
+                intent.putExtra("userPrimary", UserPrimary);
                 intent.putExtra("userName", user_edit.getText().toString());
                 startActivity(intent);
             }

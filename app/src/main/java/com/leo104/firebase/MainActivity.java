@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnLogin;
     Button btnRegister;
     FirebaseAuth mAuth;
+    String primaryKey;
 
 
     @SuppressLint("MissingInflatedId")
@@ -43,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
                 if (editId.getText().toString().isEmpty() || editPassword.getText().toString().isEmpty()) {
                     Toast.makeText(getApplicationContext(), "입력 사항을 확인해보세요.", Toast.LENGTH_LONG).show();
                     return;
+                }else{
+                    primaryKey = editId.getText().toString().trim();
+                    Log.i("primaryKey", primaryKey);
                 }
                 mAuth = FirebaseAuth.getInstance();
                 mAuth.signInWithEmailAndPassword(editId.getText().toString().trim(), editPassword.getText().toString().trim())
@@ -50,7 +55,12 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
-                                    startActivity(new Intent(MainActivity.this, StartActivity.class));
+
+
+                                    Intent intent = new Intent(MainActivity.this,StartActivity.class);
+                                    Log.i("프라이머리키", primaryKey);
+                                    intent.putExtra("primaryKey",primaryKey);
+                                    startActivity(intent);
                                     finish();
                                 } else {
                                     Toast.makeText(getApplicationContext(), "실패하였습니다.", Toast.LENGTH_SHORT).show();
@@ -63,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
 
                 startActivity(intent);

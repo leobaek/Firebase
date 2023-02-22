@@ -36,6 +36,7 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View view) {
 
 
+
         FirebaseAuth.getInstance()
                 .createUserWithEmailAndPassword(editEmail.getText().toString().trim(), editPassword.getText().toString().trim())
                 .addOnCompleteListener(RegisterActivity.this, new OnCompleteListener<AuthResult>() {
