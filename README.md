@@ -2,6 +2,5 @@
     
  | Category                                                   | Stack                                                   |
 | ------------------------------------------------------------ | ------------------------------------------------------- |
-| **Architecture**| MVC        |
-| **Android Jetpack**|  ViewModel, LiveData, Navigation, RecyclerView, Fragment  |
+| **Android Jetpack**| Navigation, ItemView, Fragment  |
 | **Networking** | Retrofit2, OkHttp3           |
