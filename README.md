@@ -3,7 +3,6 @@
 Firebase를 이용한 실시간 채팅기능 기술 세미나를 위한 예제 구현
 
 
-![listener 이미지](./images/listener.png)
 
 
 
