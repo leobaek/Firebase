@@ -4,7 +4,7 @@ Firebase를 이용한 실시간 채팅기능 기술 세미나를 위한 예제 �
 
 
 
-## 📌 Screen Shot
+## 📌 Semina Documents
     
 https://docs.google.com/presentation/d/1GX0af9SGj0ccq5A1bUqJ4XiLSk5t4bZcnnJsdD3JpyU/edit#slide=id.g210b41e3de4_29_16
 
