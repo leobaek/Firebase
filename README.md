@@ -20,4 +20,5 @@ https://docs.google.com/presentation/d/1GX0af9SGj0ccq5A1bUqJ4XiLSk5t4bZcnnJsdD3J
 
 ## 📌 세미나 개요
 <img width="100%" height="45%" src="https://user-images.githubusercontent.com/120348541/230318117-e5188918-b488-4160-b36d-29547c6aff10.png">
+<img width="100%" height="45%" src="https://user-images.githubusercontent.com/120348541/230318502-5b8d56ef-073f-48cc-bf5f-b9e609579182.png">
 <img width="100%" height="45%" src="https://user-images.githubusercontent.com/120348541/230317662-71a8f66e-9ad7-4be9-8d4b-68ea1104e54c.png">
