@@ -19,3 +19,4 @@ https://docs.google.com/presentation/d/1GX0af9SGj0ccq5A1bUqJ4XiLSk5t4bZcnnJsdD3J
 | **Networking** | Retrofit2, OkHttp3           |
 
 ## 📌 세미나 개요
+<img width="100%" height="45%" src="![image](https://user-images.githubusercontent.com/120348541/230317662-71a8f66e-9ad7-4be9-8d4b-68ea1104e54c.png)">
