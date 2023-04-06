@@ -18,4 +18,4 @@ https://docs.google.com/presentation/d/1GX0af9SGj0ccq5A1bUqJ4XiLSk5t4bZcnnJsdD3J
 | **Android Jetpack**| Navigation, ItemView, Fragment  |
 | **Networking** | Retrofit2, OkHttp3           |
 
-## 📌 세미나 
+## 📌 세미나 개요
